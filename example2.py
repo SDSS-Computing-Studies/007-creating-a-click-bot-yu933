@@ -1,5 +1,6 @@
 #!python3
 
+import time
 """ 
 pyautogui:
 PyAutoGUI lets your Python scripts control the mouse and 
@@ -42,22 +43,22 @@ currentMouseX, currentMouseY = pyautogui.position() # Get the XY position of the
 
 pyautogui.moveTo(100, 150) # Move the mouse to XY coordinates.
 #image = pyautogui.screenshot()
-#image.save('click.png')
+#image.save('Cookie.png')
 
 i = 0
 a = 'y'
 
 while a == 'y':
     i = 0
-    while i < 10:
+    while i < 20:
         i+=1
         r = pyautogui.locateCenterOnScreen('Cookie.png')
         #print(r)
         if r is not None:
             x = r[0]
             y = r[1]
-            pyautogui.moveTo(x/2,y/2, duration= 0.1)
-            pyautogui.click()
+            
+            pyautogui.click(x/2,y/2)
         
         r = list(pyautogui.locateAllOnScreen('click.png')) 
         if len(r) != 0:
