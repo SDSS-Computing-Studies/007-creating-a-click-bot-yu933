@@ -42,7 +42,7 @@ currentMouseX, currentMouseY = pyautogui.position() # Get the XY position of the
 
 pyautogui.moveTo(100, 150) # Move the mouse to XY coordinates.
 #image = pyautogui.screenshot()
-#image.save('Cookie.png')
+#image.save('click.png')
 
 i = 0
 a = 'y'
